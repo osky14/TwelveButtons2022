@@ -1,42 +1,60 @@
 <html>
   <head>
-      <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <style>
-
-
-    
-  </style>
   </head>
-  <body>
-  <h1>Find Red</h1>
- <h3 id="HIDE">hola amigo</h1>
-  <button onclick="show()">Do IT</button>
-  <button id="change" onclick="document.getElementById('change').innerHTML = 'changed'">same</button>
-  <button id="margin" onclick="document.getElementById('margin').innerHTML= 'STOP'">no</button>
-  <button id="shh" onclick="red()">gren</button>
-  <button onclick="document.body.style.background= 'rgb(220,0,184)'">suprise</button>
-  <button id='nangin' onhover="document.getElementById('nangin').style.margin = '50px'">RUN</button>
-  <button onclick="document.body.style.background= 'rgb(0,220,0)'">NICE</button>
-  <button id='notme' onclick="document.getElementById('notme').innerHTML= 'Told ya'">Not me PROMISE</button>
-  <button id='hellos' onclick="document.getElementById('hellos').style.display = 'none'">only once</button>
-  <button onclick=document.body.style.backgroundImage="url('https://94c6c962-9a87-44d5-8a9d-5daf58a09113.id.repl.co/Monkey.jpeg')">return</button>
-  <button id='china' onclick="document.getElementById('china').innerHTML= '肚明'">my name</button>
-  <button onclick="document.getElementById('HIDE').innerHTML= 'Give Up'">now</button>
-
-
-
-  <script>
-document.getElementById('HIDE').style.display='none'
-function show(){
-  document.getElementById('HIDE').style.display='block';
-}
-    function red(){
-      document.getElementById('shh').style.background = "rgb(220,0,0)";
-      
+<body id="back">
+   <script>
+  function falsePrompt() {
+    prompt('Capital Of U.S.');
+    prompt('Largest city in the U.S.');
+    alert('The Capital is Washington D.C. and the largest city is NYC');
+  }
+  function final() {
+    let q1=prompt('What Is 1+1?');
+    if (q1==2){
+      let q2=prompt('Capital Of U.S.?');
+      if (q2=="Washington D.C."){
+        let q3=prompt('Capital of Ohio');
+        if (q3=='Columbus'){
+          let moneyRec=prompt('You Won! Enter the amount you won');
+          let name=prompt('Name?')
+          alert('You Won '+moneyRec+' dollars, '+name+'.');
+        }
+      }
     }
+  }
+
     
   </script>
-  </body>
+  <h1>Win The Money</h1>
+  <h2>Currency?</h2>
+  <button onclick="document.getElementById('TR').style.display='block'">Dollars</button>
+  <br>
+  <button onclick="alert('Did you know that 1+1=2?')">Rials</button>
+  <br>
+  <button id="magic" onclick="document.getElementById('Hill').style.display='block'">Rupees</button>
+  <br>
+  <button onclick="document.getElementById('magic').style.display='none'">Won</button>
+  <br>
+  <button onclick="document.getElementById('magic').style.display='block'">Euros</button>
+  <br>
+  <button onclick="document.getElementById('back').style.backgroundColor='rgb(244,66,88)'">Pounds</button>
+  <br>
+  <h2>Amount?</h2>
+   <button onclick="document.getElementById('back').style.backgroundColor='rgb(91,204,57)'">1000</button>
+  <br>
+  <button onclick="falsePrompt()">10000</button>
+  <br>
+  <button onclick="document.getElementById('back').style.backgroundColor='rgb(100,104,57)'" ondblclick="final()">100000</button>
+  <br>
+   <button onclick="document.getElementById('largest').style.display='block'" >1000000</button>
+  <br>
+  <br>
+   <button onclick="alert('no money?')" >10000000</button>
+  <br>
+  <br>
+   <button onclick="document.getElementById('largest').innerHTML='Quizlet Is The Best Way To Study For Honors World Studies'" >100000000</button>
+  <br>
+  <p id="TR">This Is Not Your Request</p>
+  <p id="Hill">Hilliard is a city of almost 40,000 people. The city is a suburb opf the 14th largest city in the U.S. and the largest in Ohio</p>
+  <p id="largest">Hello</p>
 </html>
