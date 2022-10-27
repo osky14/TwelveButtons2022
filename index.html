@@ -4,9 +4,25 @@
     <meta name="viewport" content="width=device-width">
     <title>replit</title>
     <style>
+
+/*   Cain's Style   */
+    button{
+  visibility: hidden;
+}
+
+    #button1{
+  visibility: visible;
+}
+
+div{
+  visibility: hidden;
+}
+/*    End of Cain's Style    */
+
     #hidden {
       display: none;
     }
+
     </style>
   </head>
   <body id="back">
@@ -24,6 +40,45 @@
       <button onclick=document.body.style.backgroundImage="url('https://94c6c962-9a87-44d5-8a9d-5daf58a09113.id.repl.co/Monkey.jpeg')">return</button>
       <button id='china' onclick="document.getElementById('china').innerHTML= '肚明'">my name</button>
       <button onclick="document.getElementById('HIDE').innerHTML= 'Give Up'">now</button>
+
+    
+<!--   Cain's Code   -->
+      <h1 id="title">Find The Button</h1>
+  <audio id="myAudio">
+  <source src="totallynormalaudio.ogg" type="audio/ogg">
+  <source src="totallynormalaudio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+ 
+  <button onclick="showButton2()" id="button1">Button</button>
+  <br>
+  
+                    <button onclick="showButton3()" id="button2">Button</button> <button onclick="showButton4()" id="button3">Button</button>
+  <br><button onclick="showButton5()" id="button4">Button</button>
+  <button onclick="showButton6()" id="button5">Button</button>
+  <BR><button onclick="showButton7()" id="button6">Button</button>
+  <button onclick="showButton8()" id="button7">Button</button>
+  <br><button onclick="showButton9()" id="button8">Button</button>
+  <button onclick="showButton10()" id="button9">Button</button>
+  <button onclick="showButton11()" id="button10">Button</button>
+  <br><button onclick="showButton12()" id="button11">Button</button>
+  <button onclick="button12()" id="button12">The Button</button>
+  <br>
+ 
+  <div id="horsewalksin">
+     <h2 id="horsewalksin">Horse Walks In: A Tragic Tale</h2>
+    >Be Me
+    <br>>At The Cube Factory
+  <br> >We make cubes
+  <br> >Horse walks in
+  <br> >how.jpg
+    <br> <img src="how.jpg" alt="a confused man atop a question mark" width= 100px height= 100px>
+    <br> >Horse fights the staff, we lose
+    <br> >I am fired for not working on making horses (The horse is now my boss)
+    <br> >Worst day ever
+    </div>
+<!--   End of Cain's Code   -->
+
        <h1>Find The Hidden Button</h1>
   <p id="hidden"> <button onclick="alert('you win! nothing...')">HiddenButton!!</button> </p>
   <button onclick="alert('wrong')">Click Me!</button>
@@ -38,6 +93,7 @@
   <button onclick="document.body.style.background ='rgb(225, 87, 2)';">ClickMe!</button>
   <button onclick="document.body.style.background ='rgb(26, 8, 90)';">ClickMe!</button>
   
+
       <script>
         document.getElementById('HIDE').style.display = 'none'
 
@@ -70,6 +126,63 @@
             }
           }
         }
+        
+//         Cain's Code
+        unction showButton2(){
+  document.getElementById('button2').style.visibility='visible';
+}
+function showButton3(){
+  document.getElementById('button3').style.visibility='visible';
+}
+ function showButton4(){
+  document.getElementById('button4').style.visibility='visible';
+}   
+    function showButton5(){
+  document.getElementById('button5').style.visibility='visible';
+}
+    function showButton6(){
+  document.getElementById('button6').style.visibility='visible';
+}
+    function showButton7(){
+  document.getElementById('button7').style.visibility='visible';
+}
+    function showButton8(){
+  document.getElementById('button8').style.visibility='visible';
+  document.getElementById('button7').style.opacity='0.1';
+    }
+    function showButton9(){
+  document.getElementById('button9').style.visibility='visible';
+}
+    function showButton10(){
+  document.getElementById('button10').style.visibility='visible';
+}
+    function showButton11(){
+  document.getElementById('button11').style.visibility='visible';
+  document.body.style.background='black';
+}
+    function showButton12(){
+  document.getElementById('button12').style.visibility='visible';
+}
+    function button12(){
+  var x = document.getElementById("myAudio"); 
+  x.play(); 
+      document.getElementById("title").innerHTML = "Button Found! Story Unlocked";
+      document.getElementById('horsewalksin').style.visibility='visible';
+      document.body.style.background='white';
+      document.getElementById('button1').style.visibility='hidden';
+      document.getElementById('button2').style.visibility='hidden';
+      document.getElementById('button3').style.visibility='hidden';
+      document.getElementById('button4').style.visibility='hidden';
+      document.getElementById('button5').style.visibility='hidden';
+      document.getElementById('button6').style.visibility='hidden';
+      document.getElementById('button7').style.visibility='hidden';
+      document.getElementById('button8').style.visibility='hidden';
+      document.getElementById('button9').style.visibility='hidden';
+      document.getElementById('button10').style.visibility='hidden';
+      document.getElementById('button11').style.visibility='hidden';
+      alert("horse noises")
+}
+//         End of Cain's Code
       </script>
       <h1>Win The Money</h1>
       <h2>Currency?</h2>
