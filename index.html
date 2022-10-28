@@ -47,6 +47,74 @@ div{
     p#binaryhint{
       display: none;
     }
+
+      
+/*  Kevin Chen's Style */
+      .button1{
+      background-color: #FBFF0C;
+    }
+    .button1:hover{
+      background-color: #FF170C;
+    }
+    
+    .button2{
+      background-color: #0C6FFF;
+    }
+    .button2:hover{
+      background-color: #FBFF0C;
+    }
+    
+    .button3{
+      background-color: #FF170C;
+    }
+    .button3:hover{
+      background-color: #0C6FFF;
+    }
+    
+    .button4{
+      background-color: #8404CD;
+    }
+    .button4:hover{
+      background-color: #FF7800;
+    }
+    
+    .button5{
+      background-color: #FF7800;
+    }
+    .button5:hover{
+      background-color: #04CD38;
+    }
+    
+    .button6{
+      background-color: #04CD38;
+    }
+    .button6:hover{
+      background-color: #8404CD;
+    }
+    
+    p#hint, #nB1, #nB2, #nB3, #nB4, #nB5, #nB6{
+      display:none;
+    }
+    
+    #newButton1, #newButton2, #newButton3, #newButton4, #newButton5, #newButton6{
+      display:none;
+    }
+    
+    button{
+      width: 80px;
+      height: 80px;
+      transition: width 1s;
+    }
+    button:hover{
+      width: 100px;
+      height: 100px;
+      position: static;
+      transform: rotate(-15deg);
+      transform: rotateX(200deg);
+    }
+      
+/*  End of Kevin Chen's style */      
+
 /*   Allen's Stuff     */
        #lol {
     display:none
@@ -54,6 +122,7 @@ div{
   #hidden {
     display:none
   }
+
     </style>
   </head>
   <body id="back">
@@ -154,6 +223,117 @@ div{
 <p id="rbuttontext">Maybe Something Else?</p><br>
   <p id="congrats">Congrats, you found it!</p>
 
+    
+    // Start of Kevin Chen's code //
+    <h1>Level 1</h1>
+  <h2>Find the button that makes the background red</h2>
+  
+  <button 
+    class = "button1" 
+    onclick = "document.body.style.background='#FBFF0C';"
+    ondblclick = "document.getElementById('newButton1').style.display = 'block';">
+    Blue
+  </button>
+  
+  <button 
+    class = "button2" 
+    onclick = "document.body.style.background='#0C6FFF';" 
+    ondblclick = "document.getElementById('newButton2').style.display = 'block';">
+    Red
+  </button>
+  
+  <button 
+    class = "button3" 
+    onclick = "document.body.style.background='#FFFFFF'; 
+               document.getElementById('hint').style.display = 'block';" 
+    ondblclick = "document.getElementById('newButton3').style.display = 'block';">
+    Yellow
+  </button>
+  
+  <button 
+    class = "button4" 
+    onclick = " document.body.style.background='#8404CD';" 
+    ondblclick = "document.getElementById('newButton4').style.display = 'block';">
+    Green
+  </button>
+  
+  <button 
+    class = "button5" 
+    onclick = " document.body.style.background='#FF7800';" 
+    ondblclick = "document.getElementById('newButton5').style.display = 'block';">
+    Purple
+  </button>
+  
+  <button 
+    class = "button6" 
+    onclick = " document.body.style.background='#04CD38';" 
+    ondblclick = "document.getElementById('newButton6').style.display = 'block';">
+    Orange
+  </button>
+
+  <p id = "hint">Double is the hint</p><br>
+
+  <button 
+    id = "newButton1" 
+    class = "button1" 
+    onclick = "document.body.style.background='#FFB3A3';
+               document.getElementById('nB1').style.display = 'block';">
+    Red?
+  </button>
+
+  <p id = "nB1">Not red</p>
+  
+  <button 
+    id = "newButton2" 
+    class = "button1" 
+    onclick = "document.body.style.background='#B26A5B';
+               document.getElementById('nB2').style.display = 'block';">
+    Maybe red
+  </button>
+
+  <p id = "nB2">Nope</p>
+  
+  <button 
+    id = "newButton3" 
+    class = "button1" 
+    onclick = "document.body.style.background='#812917';
+               document.getElementById('nB3').style.display = 'block';">
+    rED
+  </button>
+
+  <p id = "nB3">Incorrect</p>
+  
+  <button 
+    id = "newButton4" 
+    class = "button1" 
+    onclick = "document.body.style.background='#FF5E3B';
+               document.getElementById('nB4').style.display = 'block';">
+    Der
+  </button>
+
+  <p id = "nB4">What is Der?</p>
+  
+  <button 
+    id = "newButton5" 
+    class = "button1" 
+    onclick = "document.body.style.background='#FF0000';
+               document.getElementById('nB5').style.display = 'block';">
+    Red
+  </button>
+
+  <p id = "nB5">GOOD JOB!!!</p>
+  
+  <button 
+    id = "newButton6" 
+    class = "button1" 
+    onclick = "document.body.style.background='#0FFF00';
+               document.getElementById('nB6').style.display = 'block';">
+    Apple
+  </button>
+
+  <p id = "nB6">Green apple</p>
+    
+    // End of Kevin Chen's code //
 
       
       
@@ -337,6 +517,9 @@ document.getElementById('button11').style.visibility='hidden';
 alert("horse noises")
 }
 //         End of Cain's Code
+
+  
+
 
   document.getElementById('HIDE').style.display = 'none'
 
