@@ -47,6 +47,7 @@ div{
     p#binaryhint{
       display: none;
     }
+
       
 /*  Kevin Chen's Style */
       .button1{
@@ -113,6 +114,15 @@ div{
     }
       
 /*  End of Kevin Chen's style */      
+
+/*   Allen's Stuff     */
+       #lol {
+    display:none
+  }
+  #hidden {
+    display:none
+  }
+
     </style>
   </head>
   <body id="back">
@@ -384,6 +394,46 @@ div{
   
   <button id="demo" onclick="myFunction()">Click Me</h3>
     
+<!--Allen's Code-->
+    
+    <center>
+  <h1 id="title">find the button that literally deletes the page</h1>
+  <img src ="cainc" alt="cainc image.com heheheha" width=800px height=300px id="lol">
+  <br>
+  <button type="button" onclick="image()">BUTTON_</button>
+  <br>
+  <button type="button" onclick="die()" id="hide">BUTTON_</button>
+  <br>
+  <button type="button" onclick="alert('hi');">BUTTON_</button>
+  <br>
+  <button type="button" onclick="document.body.innerHTML = 'we are going to beat you to death';" id="hide">BUTTON_</button>
+  <br>
+  <button type="button" onclick="greenBackground()">BUTTON_</button>
+  <br>
+  <button type="button" onclick="document.body.innerHTML = '<h1>restart bozo</h1>';">BUTTON_</button>
+  <br>
+  <button type="button" onclick="document.getElementById('hide').style.display = 'block';">BUTTON_</button>
+  <br>
+  <button type="button" onclick="document.body.innerHTML = 'restart noob you dont win gottem';">BUTTON_</button>
+  <br id="hidden">
+  <button type="button" onclick="alert('your mother');" id="hidden">BUTTON_</button>
+  <br>
+  <button type="button" onclick="alert('we are going to beat you to death');">BUTTON_</button>
+  <br>
+  <button type="button" onclick="document.body.innerHTML = '';">BUTTON_</button>
+  <br id="hidden">
+  <button type="button" onclick="alert('your mother');" id="hidden">BUTTON_</button>
+  <br>
+  <button type="button" onclick="alert('you win! just kidding lel');">BUTTON_</button>
+  <br id="hidden">
+  <button type="button" onclick="alert('your mother');" id="hidden">BUTTON_</button>
+  <br>
+  <button type="button" onclick="alert('3.1415926535897932384626433832795028841979');">BUTTON_</button>
+  <br id="hidden">
+  <button type="button" onclick="alert('your mother');" id="hidden">BUTTON_</button>
+  
+  <!--End of Allen's Code-->
+    
     <script>
 function myFunction() {
   document.getElementById("demo").style.color = "red";
@@ -467,9 +517,10 @@ document.getElementById('button11').style.visibility='hidden';
 alert("horse noises")
 }
 //         End of Cain's Code
+
   
-</script>
-<script>
+
+
   document.getElementById('HIDE').style.display = 'none'
 
   function show() {
@@ -478,6 +529,19 @@ alert("horse noises")
 
   function red() {
     document.getElementById('shh').style.background = "rgb(220,0,0)";
+  }
+  
+  
+//         Allen's Code
+  function image() {
+    document.getElementById("lol").style.display = "block";
+  }
+  function die() {
+    document.getElementById("hidden").style.display = "block";
+    document.getElementById("hide").style.display = "none";
+  }
+  function greenBackground() {
+    document.body.style.backgroundColor = "green";
   }
 </script>
  
