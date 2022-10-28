@@ -4,9 +4,12 @@
     <meta name="viewport" content="width=device-width">
     <title>replit</title>
     <style>
+      body{
+        background-color: #aaccff;
+      }
 
 /*   Cain's Style   */
-    button{
+    button.cain{
   visibility: hidden;
 }
 
@@ -74,16 +77,16 @@ div{
   <button onclick="showButton2()" id="button1">Button</button>
   <br>
   
-                    <button onclick="showButton3()" id="button2">Button</button> <button onclick="showButton4()" id="button3">Button</button>
-  <br><button onclick="showButton5()" id="button4">Button</button>
-  <button onclick="showButton6()" id="button5">Button</button>
-  <BR><button onclick="showButton7()" id="button6">Button</button>
-  <button onclick="showButton8()" id="button7">Button</button>
-  <br><button onclick="showButton9()" id="button8">Button</button>
-  <button onclick="showButton10()" id="button9">Button</button>
-  <button onclick="showButton11()" id="button10">Button</button>
-  <br><button onclick="showButton12()" id="button11">Button</button>
-  <button onclick="button12()" id="button12">The Button</button>
+                    <button class="cain" onclick="showButton3()" id="button2">Button</button> <button class="cain" onclick="showButton4()" id="button3">Button</button>
+  <br><button class="cain" onclick="showButton5()" id="button4">Button</button>
+  <button class="cain" onclick="showButton6()" id="button5">Button</button>
+  <BR><button class="cain" onclick="showButton7()" id="button6">Button</button>
+  <button class="cain" onclick="showButton8()" id="button7">Button</button>
+  <br><button class="cain" onclick="showButton9()" id="button8">Button</button>
+  <button class="cain" onclick="showButton10()" id="button9">Button</button>
+  <button class="cain" onclick="showButton11()" id="button10">Button</button>
+  <br><button class="cain" onclick="showButton12()" id="button11">Button</button>
+  <button class="cain" onclick="button12()" id="button12">The Button</button>
   <br>
  
   <div id="horsewalksin">
@@ -145,96 +148,8 @@ div{
   <p id="congrats">Congrats, you found it!</p>
 
 
-      <script>
-        document.getElementById('HIDE').style.display = 'none'
-
-        function show() {
-          document.getElementById('HIDE').style.display = 'block';
-        }
-
-        function red() {
-          document.getElementById('shh').style.background = "rgb(220,0,0)";
-        }
-      </script>
-      <script>
-        function falsePrompt() {
-          prompt('Capital Of U.S.');
-          prompt('Largest city in the U.S.');
-          alert('The Capital is Washington D.C. and the largest city is NYC');
-        }
-
-        function final() {
-          let q1 = prompt('What Is 1+1?');
-          if (q1 == 2) {
-            let q2 = prompt('Capital Of U.S.?');
-            if (q2 == "Washington D.C.") {
-              let q3 = prompt('Capital of Ohio');
-              if (q3 == 'Columbus') {
-                let moneyRec = prompt('You Won! Enter the amount you won');
-                let name = prompt('Name?')
-                alert('You Won ' + moneyRec + ' dollars, ' + name + '.');
-              }
-            }
-          }
-        }
-        
-//         Cain's Code
-        function showButton2(){
-  document.getElementById('button2').style.visibility='visible';
-}
-function showButton3(){
-  document.getElementById('button3').style.visibility='visible';
-}
- function showButton4(){
-  document.getElementById('button4').style.visibility='visible';
-}   
-    function showButton5(){
-  document.getElementById('button5').style.visibility='visible';
-}
-    function showButton6(){
-  document.getElementById('button6').style.visibility='visible';
-}
-    function showButton7(){
-  document.getElementById('button7').style.visibility='visible';
-}
-    function showButton8(){
-  document.getElementById('button8').style.visibility='visible';
-  document.getElementById('button7').style.opacity='0.1';
-    }
-    function showButton9(){
-  document.getElementById('button9').style.visibility='visible';
-}
-    function showButton10(){
-  document.getElementById('button10').style.visibility='visible';
-}
-    function showButton11(){
-  document.getElementById('button11').style.visibility='visible';
-  document.body.style.background='black';
-}
-    function showButton12(){
-  document.getElementById('button12').style.visibility='visible';
-}
-    function button12(){
-  var x = document.getElementById("myAudio"); 
-  x.play(); 
-      document.getElementById("title").innerHTML = "Button Found! Story Unlocked";
-      document.getElementById('horsewalksin').style.visibility='visible';
-      document.body.style.background='white';
-      document.getElementById('button1').style.visibility='hidden';
-      document.getElementById('button2').style.visibility='hidden';
-      document.getElementById('button3').style.visibility='hidden';
-      document.getElementById('button4').style.visibility='hidden';
-      document.getElementById('button5').style.visibility='hidden';
-      document.getElementById('button6').style.visibility='hidden';
-      document.getElementById('button7').style.visibility='hidden';
-      document.getElementById('button8').style.visibility='hidden';
-      document.getElementById('button9').style.visibility='hidden';
-      document.getElementById('button10').style.visibility='hidden';
-      document.getElementById('button11').style.visibility='hidden';
-      alert("horse noises")
-}
-//         End of Cain's Code
-      </script>
+      
+      
       <h1>Win The Money</h1>
       <h2>Currency?</h2>
       <button onclick="document.getElementById('TR').style.display='block'">Dollars</button>
@@ -297,8 +212,96 @@ function myFunction() {
   document.getElementById("demo").style.color = "red";
 }
 </script>
+<script>
+  function falsePrompt() {
+    prompt('Capital Of U.S.');
+    prompt('Largest city in the U.S.');
+    alert('The Capital is Washington D.C. and the largest city is NYC');
+  }
 
-    
+  function final() {
+    let q1 = prompt('What Is 1+1?');
+    if (q1 == 2) {
+      let q2 = prompt('Capital Of U.S.?');
+      if (q2 == "Washington D.C.") {
+        let q3 = prompt('Capital of Ohio');
+        if (q3 == 'Columbus') {
+          let moneyRec = prompt('You Won! Enter the amount you won');
+          let name = prompt('Name?')
+          alert('You Won ' + moneyRec + ' dollars, ' + name + '.');
+        }
+      }
+    }
+  }
+  
+//         Cain's Code
+  function showButton2(){
+document.getElementById('button2').style.visibility='visible';
+}
+function showButton3(){
+document.getElementById('button3').style.visibility='visible';
+}
+function showButton4(){
+document.getElementById('button4').style.visibility='visible';
+}   
+function showButton5(){
+document.getElementById('button5').style.visibility='visible';
+}
+function showButton6(){
+document.getElementById('button6').style.visibility='visible';
+}
+function showButton7(){
+document.getElementById('button7').style.visibility='visible';
+}
+function showButton8(){
+document.getElementById('button8').style.visibility='visible';
+document.getElementById('button7').style.opacity='0.1';
+}
+function showButton9(){
+document.getElementById('button9').style.visibility='visible';
+}
+function showButton10(){
+document.getElementById('button10').style.visibility='visible';
+}
+function showButton11(){
+document.getElementById('button11').style.visibility='visible';
+document.body.style.background='black';
+}
+function showButton12(){
+document.getElementById('button12').style.visibility='visible';
+}
+function button12(){
+var x = document.getElementById("myAudio"); 
+x.play(); 
+document.getElementById("title").innerHTML = "Button Found! Story Unlocked";
+document.getElementById('horsewalksin').style.visibility='visible';
+document.body.style.background='white';
+document.getElementById('button1').style.visibility='hidden';
+document.getElementById('button2').style.visibility='hidden';
+document.getElementById('button3').style.visibility='hidden';
+document.getElementById('button4').style.visibility='hidden';
+document.getElementById('button5').style.visibility='hidden';
+document.getElementById('button6').style.visibility='hidden';
+document.getElementById('button7').style.visibility='hidden';
+document.getElementById('button8').style.visibility='hidden';
+document.getElementById('button9').style.visibility='hidden';
+document.getElementById('button10').style.visibility='hidden';
+document.getElementById('button11').style.visibility='hidden';
+alert("horse noises")
+}
+//         End of Cain's Code
+</script>
+<script>
+  document.getElementById('HIDE').style.display = 'none'
+
+  function show() {
+    document.getElementById('HIDE').style.display = 'block';
+  }
+
+  function red() {
+    document.getElementById('shh').style.background = "rgb(220,0,0)";
+  }
+</script>
  
  
     
