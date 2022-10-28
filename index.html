@@ -22,7 +22,28 @@ div{
     #hidden {
       display: none;
     }
-
+/*    Vincent's Style     */
+         #rButton{
+    display: none;
+  }
+    h1#changeColor{
+      color: #000000;
+    }
+    .disabled {
+  cursor: not-allowed;
+}
+    p#rbuttontext{
+     display: none;
+    }
+    p#congrats{
+      display: none;
+    }
+    p#hint{
+      display: none;
+    }
+    p#binaryhint{
+      display: none;
+    }
     </style>
   </head>
   <body id="back">
@@ -92,7 +113,37 @@ div{
   <button onclick="document.body.style.background ='rgb(251, 34, 88)';">ClickMe!</button>
   <button onclick="document.body.style.background ='rgb(225, 87, 2)';">ClickMe!</button>
   <button onclick="document.body.style.background ='rgb(26, 8, 90)';">ClickMe!</button>
-  
+  <!--    Vincent's Code    -->
+    <h1 id="changeColor">Find the button that makes the background red</h1>
+  <button onclick="document.body.style.background=('#CF00FF');">Click Me</button>
+  <button onclick="document.body.style.background=('#5BC42E');">Click Me</button>
+  <button onclick="document.body.style.background=('#2EC4B1');">Click Me</button>
+  <button onclick="document.body.style.background=('#F6A70D');">Click Me</button>
+  <button onclick="document.body.style.background=('#0D3CF6');">Click Me</button>
+  <button onclick="document.body.style.background=('#000000'); document.getElementById('changeColor').style.color= '#FFFFFF';">Click Me</button>
+  <button onclick="document.body.style.background=('#419C4D');">Click Me</button>
+  <button onclick="document.body.style.background=('#A36DB7');">Click Me</button>
+  <button onclick="document.body.style.background=('#44f3dc'); document.getElementById('binaryhint').style.display='block';">CliCk Me</button>
+  <button onclick="document.body.style.background=('#F7E3FE');">Click Me</button>
+  <button class= "disabled">ClicK Me</button>
+  <button onclick="document.body.style.background=('#99CCFF');">Click Me</button>
+  <button onclick="document.body.style.background=('#D03582');">Click Me</button>
+  <button onclick="document.body.style.background=('#3588D0');">Click Me</button>
+  <button onclick="document.body.style.background=('#35D076');">Click Me</button>
+  <button onclick="document.getElementById('rButton').style.display= 'block';">Click Me</button>
+  <button onclick="document.body.style.background=('#FFDACA'); document.getElementById('hint').style.display='block';">Click Me</button>
+  <br>
+    <p id="hint">-- .- -.-- -... . / - .-. -.-- / -.. --- ..- -... .-.. . -....- -.-. .-.. .. -.-. -.- .. -. --. / ... --- -- . - .... .. -. --.</p>
+  <br>
+  <br>
+    <p id="binaryhint">01010100 01101000 01101001 01101110 01100111 01110011 00100000 01100001 01110010 01100101 00100000 01101110 01101111 01110100 00100000 01110111 01101000 01100001 01110100 00100000 01110100 01101000 01100101 01111001 00100000 01110011 01100101 01100101 01101101  </p>
+  <br>
+  <br>
+  <br>
+   <button onclick="document.getElementById('rbuttontext').style.display= 'block';" ondblclick="document.body.style.background=('#FF0000'); document.getElementById('congrats').style.display= 'block';" id= "rButton">Click Me</button> <br>
+<p id="rbuttontext">Maybe Something Else?</p><br>
+  <p id="congrats">Congrats, you found it!</p>
+
 
       <script>
         document.getElementById('HIDE').style.display = 'none'
