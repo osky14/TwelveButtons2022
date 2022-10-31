@@ -122,7 +122,18 @@ div{
   #hidden {
     display:none
   }
-
+/*  End of Allen's Stuff     */
+      
+/*  Conlans Stylings  */
+      button.randColor {
+      width:calc(100%/3 - 12px);
+      height:50px;
+      font-size:45px;
+      margin-right:4px;
+      margin-bottom:4px;
+      border-radius:30px;
+    }
+/*  End of Conlans Stylings  */
     </style>
   </head>
   <body id="back">
@@ -433,7 +444,21 @@ div{
   <button type="button" onclick="alert('your mother');" id="hidden">BUTTON_</button>
   
   <!--End of Allen's Code-->
-    
+  <!--Conlan's html-->
+      <h1>Make the background RED</h1>
+  <button class="randColor" id="b0"></button>
+  <button class="randColor" id="b1"></button>
+  <button class="randColor" id="b2"></button>
+  <button class="randColor" id="b3"></button>
+  <button class="randColor" id="b4"></button>
+  <button class="randColor" id="b5"></button>
+  <button class="randColor" id="b6"></button>
+  <button class="randColor" id="b7"></button>
+  <button class="randColor" id="b8"></button>
+  <button class="randColor" id="b9"></button>
+  <button class="randColor" id="b10"></button>
+  <button class="randColor" id="b11"></button>
+  <!--End of Conlan's html-->
     <script>
 function myFunction() {
   document.getElementById("demo").style.color = "red";
@@ -543,6 +568,70 @@ alert("horse noises")
   function greenBackground() {
     document.body.style.backgroundColor = "green";
   }
+  
+  
+  
+  //Conlan's Spaghetti:
+  function listShuffle(array) {
+    for (let i = array.length -1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i+1));
+    let k = array[i];
+    array[i] = array[j];
+    array[j] = k;
+  }
+    }
+  const colorName = ['Yellow', 'Blue', 'Orange', 'Green', 'Violet', 'Black', 'White', 'Sky', 'Forest', 'Teal', 'Red', 'Pink'];
+  const colorText = ['#ffff00', '#0000ff', '#ffcc00', '#00ff00', '#ff00ff', '#000', '#fff', '#00ffff', '#004400', '#00dddd', '#ff0000', 'ff44cc'];
+  const colorBkgd = ['#aaaa44', '#4444aa', '#cc9944', '#44aa44', '#aa44aa', '#444444', '#aaaaaa', '#44cccc', '#226622', '#44aaaa', '#aa4444', '#dd4499'];
+  const colorFunc = ['setBgColor(15,15,-15)', 'setBgColor(-15,-15,15)', 'setBgColor(15,7,-15)', 'setBgColor(-15,15,-15)', 'setBgColor(15,-15,15)', 'setBgColor(-15,-15,-15)', 'setBgColor(15,15,15)', 'setBgColor(-30,30,30)', 'setBgColor(-15,7,-15)', 'setBgColor(-15,15,7)', 'shuffle()', 'r=128;g=128;b=128;setBgColor(0, 0, 0);'];
+  var r = 128;
+  var g = 128;
+  var b = 128;
+  function setColor() {
+    for (let i = 0; i < 12;i++) {
+      document.getElementById("b" + i).innerHTML = colorName[i];
+      document.getElementById("b" + i).style.color = colorText[i];
+      document.getElementById("b" + i).style.backgroundColor = colorBkgd[i];
+      document.getElementById("b" + i).setAttribute('onclick',colorFunc[i]);
+    }
+  }
+  function shuffle() {
+    listShuffle(colorName);
+    listShuffle(colorText);
+    listShuffle(colorBkgd);
+    listShuffle(colorFunc);
+    setColor();
+    }
+  
+  function setBgColor(red, green, blue) {
+    r += red;
+    g += green;
+    b += blue;
+    if (r>=256){
+      r=255;
+    } else if (r<0){
+      r=0;
+    }
+    if (g>=256){
+      g=255;
+    } else if (g<0){
+      g=0;
+    }
+    if (b>=256){
+      b=255;
+    } else if (b<0){
+      b=0;
+    }
+    document.body.style.backgroundColor = 'rgb(' + [r,g,b].join(',') + ')';
+
+
+    if (r>100 && (g + b) <= 15) {
+      alert('YOU WIN!!!')
+      r=128;g=128;b=128;setBgColor(0, 0, 0);shuffle();
+    }
+  }
+  shuffle();
+  
 </script>
  
  
