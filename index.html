@@ -459,6 +459,36 @@ div{
   <button class="randColor" id="b10"></button>
   <button class="randColor" id="b11"></button>
   <!--End of Conlan's html-->
+      
+  <!--   Jackson's HTML   -->
+      
+  <h1 id="findHeading">Find the button that makes this text green...</h1>
+  
+  <p id="notHere">Not here, he he he</p>
+
+  <p id="nope">Nope</p>
+
+  <img id="hiddenImg"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-UMA7UwvVFmMIE7fMY2_Z3sep5UBMpmnroQ:https://www.africanoverlandtours.com/wp-content/uploads/2014/04/animal_facts-e1396431549968.jpgusqp=CAU"
+    alt="COW">
+
+  <img id="hiddenImg2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkvFCLSMbUU6Bqb1m-0y3LPAQ7_Gcs-PNZw:https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg&usqp=CAU" alt="Seagul">
+  
+  <hr>
+
+  <button onclick="document.getElementById('hiddenImg2').style.display = 'block';">Right HERE!</button>
+  <button onclick="document.getElementById('spin').style.display = 'none';">CLIK</button>
+  <button onclick="document.getElementById('findHeading').style.color = '#00ff00';">im not here</button>
+  <button onclick="self.close()">Dont...</button>
+  <button onclick="document.getElementById('hiddenImg').style.display = 'block';">No.</button>
+  <button onclick="document.body.style.backgroundColor = '#000000'">Nope</button>
+  <button onclick="repeatAlert()">DO NOT CLICK</button>
+  <button ondblclick="document.getElementById('nope').style.display = 'block';">Not Here.</button>
+  <button onclick="document.getElementById('findHeading').style.color = '#ff0000';">Really...?</button>
+  <button onclick="document.body.style.backgroundColor = '#ff0000';">HERE</button>
+  <button onclick="document.getElementById('spin').style.transform = 'rotate(180deg)';">goodbye</button>
+  <button onclick="document.getElementById('notHere').style.display = 'block';">dont click me</button>
+      
     <script>
 function myFunction() {
   document.getElementById("demo").style.color = "red";
@@ -631,6 +661,24 @@ alert("horse noises")
     }
   }
   shuffle();
+  
+  /* Jackson's JS */
+  
+    document.getElementById('notHere').style.display = 'none';
+    document.getElementById('nope').style.display = 'none';
+    document.getElementById('hiddenImg').style.display = 'none';
+    document.getElementById('hiddenImg2').style.display = 'none';
+    document.getElementById('spin').style.transition = '1s';
+    document.getElementById('spin').style.position = 'absolute';
+    
+    
+    function repeatAlert() {
+      while (true) {
+        alert('WAKE UP')
+      }
+    }
+  
+  
   
 </script>
  
